@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Read from MongoDB</title>
+	<link rel="stylesheet" href="css/profile.css">
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+	<script src="js/profile.js"></script>
+</head>
+<body>
+	<div class="container">
+		<h1>My Profile</h1>
+		<table id="user-table">
+			<thead>
+				<tr>
+					<th>Name</th>
+					<th>Date of Birth</th>
+					<th>Age</th>
+					<th>Mobile Number</th>
+				</tr>
+			</thead>
+			<tbody>
+			</tbody>
+		</table>
+	</div>
+	<center>
+<h2>Edit Profile</h2>
+		<label for="name">Name:</label>
+		<input type="text" id="name" name="name" disabled><br><br>
+		<label for="dob">DOB:</label>
+		<input type="text" id="dob" name="dob"><br><br>
+		<label for="dob">Age:</label>
+		<input type="text" id="age" name="age"><br><br>
+    <label for="mobile">Mobile:</label>
+    <input type="text" id="mobile" name="mobile"><br><br>
+    <input type="button" value="Update" onclick="updateData()">
+	<br><br>
+	<a href="login.html">Logout</a>
+</center>
+</body>
+</html>
